@@ -1,0 +1,31 @@
+/*
+Icons define style
+*/
+.fab {
+  height: 35px; line-height: 35px; width: 35px; border-radius: 20px;text-decoration: none;
+  }
+  .fa-facebook {
+    background: #3b5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55acee;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+  .socialIcons li {
+    display: inline;
+    list-style: none;
+  }
