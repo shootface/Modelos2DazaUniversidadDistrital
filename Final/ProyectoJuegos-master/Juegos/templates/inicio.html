@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block style_content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    
+{% endblock style_content %}
+
+{% block content %}
+<section class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-inicio">
+                <h2 class="text-center">Bienvenido {{user.first_name}} {{user.last_name}}, ¿que desea Jugar?</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-btn col-inicio">
+                <div class="btn-group-vertical btn-group-lg" role="group">
+                    <input type="button" class="btn btn-outline-primary btn-block" value="La Llorona" id="llorona">
+                    <input type="button" class="btn btn-outline-primary btn-block" value="Elude Asteroids" id="elude">
+                    <input type="button" class="btn btn-outline-primary btn-block" value="Calaveras" id="calaveras" >
+                    <input type="button" class="btn btn-outline-primary btn-block" value="2048" id="2048">
+                    <input type="button" class="btn btn-outline-primary btn-block" value="Charizard" id="charizard">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{% static 'js/inicio.js' %}"></script>
+{% endblock content %}
