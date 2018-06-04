@@ -40,8 +40,7 @@ def puntaje_2048(request):
         juego = Videojuego.objects.get(codigo=4)
         usuario = request.user
         puntaje = request.POST['puntaje']
-        puntajePartida = Jugador_VideoJuego.objects.create(
-        puntaje=puntaje, jugador=usuario, juego=juego)
+        puntajePartida = Jugador_VideoJuego.objects.create(puntaje=puntaje, jugador=usuario, juego=juego)
         puntajePartida.save()
         return HttpResponse("Guardado")
     return HttpResponse("hola")
