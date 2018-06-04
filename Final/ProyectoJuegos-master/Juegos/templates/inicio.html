@@ -9,17 +9,24 @@
 
 {% block content %}
 <section class="section-container">
-    <div class="container">
+    <!--<div class="container">
         <div class="row">
             <div class="col-12 col-inicio">
-                <h2 class="text-center">Bienvenido {{user.first_name}} {{user.last_name}}, ¿que desea Jugar?</h2>
+              <br>
+			  <br>
+			  <br>
             </div>
         </div>
-    </div>
+    </div>-->
+	<center>
+	<div class="bienvenido" style="width: 400px; height: 120px;">
+	
+	</div>
+	</center>
 </section>
 
-<section class="section-container">
-    <div class="container">
+<section>
+   <!-- <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-btn col-inicio">
                 <div class="btn-group-vertical btn-group-lg" role="group">
@@ -31,7 +38,83 @@
                 </div>
             </div>
         </div>
+    </div>-->
+	<center>
+	<div class="row">
+  <div class="col-sm-6 col-md-4" id="espacio" >
+    <div class="thumbnail llorona" id="espacios2">
+        <div class="caption">
+        <h3>La llorona</h3>
+		</div>
+	  
     </div>
+	<p>
+          <a href="#" class="btn btn-primary" role="button" value="La Llorona" id="llorona">Jugar</a>
+          
+        </p>
+  </div>
+  <div class="col-sm-6 col-md-4" id="espacio">
+    <div class="thumbnail asteroides" id="espacios2">
+      <div class="caption">
+        <h3>Asteroides</h3>
+       
+        
+		
+      </div>
+    </div>
+	<p>
+          <a href="#" class="btn btn-primary" role="button" value="Elude Asteroids" id="elude">Jugar</a>
+          
+        </p>
+  </div>
+  <div class="col-sm-6 col-md-4" id="espacio">
+    <div class="thumbnail calaveras" id="espacios2">
+      <div class="caption" >
+        <h3 >Calaveras</h3>	
+      </div>
+	  
+    </div>
+	<p>
+          <a href="#" class="btn btn-primary" role="button" value="Calaveras" id="calaveras">Jugar</a>
+          
+        </p>
+  </div>
+  </div>
+  </center>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section>
+  <center>
+  <div class="row">
+  <div class="col-sm-6 col-md-4" id="espacio">
+    <div class="thumbnail dosmil" id="espacios2">
+      
+      <div class="caption">
+        <h3>2048</h3>	
+      </div>
+    </div>
+	<p>
+          <a href="#" class="btn btn-primary" role="button" value="2048" id="2048">Jugar</a>
+          
+        </p>
+  </div>
+  <div class="col-sm-6 col-md-4" id="espacio">
+    <div class="thumbnail charizard" id="espacios2">
+      
+      <div class="caption">
+        <h3>Charizard</h3>	
+      </div>
+    </div>
+	<p>
+          <a href="#" class="btn btn-primary" role="button" value="Charizard" id="charizard">Jugar</a>
+          
+        </p>
+  </div>
+</div>
+</center>
 </section>
 <script src="{% static 'js/inicio.js' %}"></script>
 {% endblock content %}
